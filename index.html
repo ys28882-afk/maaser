@@ -1143,7 +1143,7 @@ dialog.sheet[open]:not(.is-closing) { animation: sheet-spring .5s var(--spring);
     <h2 class="sheet-title" id="insTitle">התקינו לפני שמתחילים</h2>
     <p class="sheet-text">באייפון, הנתונים נשמרים לאורך זמן רק כשהמחשבון מותקן במסך הבית.</p>
     <ol class="steps group">
-      <li>לחצו על כפתור השיתוף של הדפדפן (ריבוע עם חץ למעלה)</li>
+      <li>לחצו על כפתור השיתוף (ריבוע עם חץ למעלה). ב-iOS 26 לחצו קודם על שלוש הנקודות (•••) ושם על ״שיתוף״</li>
       <li>בחרו ״הוסף למסך הבית״</li>
       <li>פתחו את המחשבון מהאייקון החדש</li>
     </ol>
@@ -1156,7 +1156,7 @@ dialog.sheet[open]:not(.is-closing) { animation: sheet-spring .5s var(--spring);
 <script>
 (() => {
 'use strict';
-const APP_VERSION = '1.1.0';
+const APP_VERSION = '1.1.1';
 /* =====================================================================
    לוגיקה טהורה (ללא DOM): מנוע מחשבון, עיצוב מספרים, תאריך עברי,
    כתיבת XLSX ו-PDF ללא ספריות חיצוניות.
@@ -2513,11 +2513,11 @@ function renderInstall() {
       '<span class="row-title">התקנת המחשבון</span>' +
       '<span class="row-sub">נפתח בחלון משלו ועובד גם בלי אינטרנט</span></span></button>';
   } else if (isIOS) {
-    box.innerHTML = '<ol class="steps"><li>לחצו על כפתור השיתוף של הדפדפן (ריבוע עם חץ למעלה)</li>' +
+    box.innerHTML = '<ol class="steps"><li>לחצו על כפתור השיתוף (ריבוע עם חץ למעלה). ב-iOS 26 לחצו קודם על שלוש הנקודות (•••) ושם על ״שיתוף״</li>' +
       '<li>בחרו ״הוסף למסך הבית״</li><li>פתחו את המחשבון מהאייקון החדש</li></ol>';
   } else {
     box.innerHTML = row('במחשב', 'ב-Chrome או ב-Edge, לחצו על סמל ההתקנה שבשורת הכתובת') +
-      row('באייפון', 'ב-Safari, לחצו על שיתוף ואז ״הוסף למסך הבית״');
+      row('באייפון', 'ב-Safari, לחצו על שיתוף (ב-iOS 26 קודם על •••) ואז ״הוסף למסך הבית״');
   }
 }
 
