@@ -11,15 +11,9 @@
 | `manifest.webmanifest` | מגדיר שם, צבעים ואייקון להתקנה |
 | `icons/` | האייקונים למסך הבית ולמחשב |
 
-## העלאה ל-GitHub Pages (חינם)
+## קישור
 
-1. פתחו חשבון ב-github.com וצרו repository חדש וציבורי, למשל בשם `maaser`.
-2. בעמוד ה-repository לחצו Add file ואז Upload files, וגררו פנימה את כל תוכן התיקייה, כולל התיקייה `icons`.
-3. לחצו Commit changes.
-4. עברו אל Settings, ואז Pages. תחת Source בחרו Deploy from a branch, בחרו את הענף `main` ואת התיקייה `/ (root)`, ולחצו Save.
-5. אחרי דקה או שתיים האתר זמין בכתובת `https://שם-המשתמש.github.io/maaser/`. זה הקישור ששולחים למשתמשים.
-
-אפשר להשתמש באותה צורה בכל אחסון סטטי אחר (Netlify, Cloudflare Pages). הדרישה היחידה היא כתובת HTTPS.
+https://ys28882-afk.github.io/maaser/
 
 ## איך המשתמש מתקין
 
